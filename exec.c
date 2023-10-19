@@ -9,7 +9,7 @@ int exec(program_data *data)
 	int retval = 0, status;
 	pid_t pidd;
 
-	retval = builtinslist(data);
+	retval = builtin_list(data);
 	if (retval != -1)
 		return (retval);
 

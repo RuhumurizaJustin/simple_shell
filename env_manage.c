@@ -17,7 +17,7 @@ char *env_get_key(char *key, program_data *data)
 
 	for (c = 0; data->env[c]; c++)
 	{
-		if (str_compare(key, data->env[i], key_length) &&
+		if (str_compare(key, data->env[c], key_length) &&
 		 data->env[c][key_length] == '=')
 		{
 			return (data->env[c] + key_length + 1);
@@ -84,7 +84,7 @@ int env_remove_key(char *key, program_data *data)
 		if (str_compare(key, data->env[c], key_length) &&
 		 data->env[c][key_length] == '=')
 		{
-			free(data->env[c])
+			free(data->env[c]);
 			c++;
 			for (; data->env[c]; c++)
 			{

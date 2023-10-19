@@ -62,7 +62,7 @@ int buffer_add(char *buffer, char *str_to_add);
 char *_strtok(char *line, char *delim);
 void tokenizer(program_data *data);
 int exec(program_data *data);
-int builtinslist(program_data *data);
+int builtin_list(program_data *data);
 char **tokenize_path(program_data *data);
 int find_program(program_data *data);
 void free_array_of_pointers(char **directories);

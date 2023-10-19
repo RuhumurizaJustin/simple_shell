@@ -1,4 +1,3 @@
-str token
 #include "simple_shell.h"
 /**
  * _strtok - separates strings with delimiters
